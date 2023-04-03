@@ -2,10 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/RPO" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/RPO/libs/mbedtls/mbedtls" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/RPO/libs/spdlog/spdlog" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/RPO_old/libs/mbedtls/mbedtls" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/RPO_old/libs/spdlog/spdlog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libs/mbedtls/mbedtls" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libs/spdlog/spdlog" vcs="Git" />
   </component>
 </project>

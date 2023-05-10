@@ -2,8 +2,11 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { useNavigate } from 'react-router-dom';
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { useNavigate } from 'react-router-dom'
 import {Link} from 'react-router-dom'
+import BackendService from '../services/BackendService';
+import Utils from "../utils/Utils";
 
 class NavigationBarClass extends React.Component {
 
@@ -14,6 +17,13 @@ class NavigationBarClass extends React.Component {
 
     goHome() {
         this.props.navigate('Home');
+    }
+
+    logout() {
+        BackendService.logout().then(() => {
+            Utils.removeUser();
+            this.goHome()
+        });
     }
 
     render() {

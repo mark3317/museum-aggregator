@@ -1,9 +1,9 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {createBrowserHistory} from "history";
 
 import NavigationBar from "./components/NavigationBar";
-import Login from "./components/Login";
 import Home from "./components/Home";
 
 function App() {
@@ -14,11 +14,11 @@ function App() {
                 <div className="container-fluid">
                     <Routes>
                         <Route path="home" element={<Home />}/>
-                        <Route path="login" element={<Login />}/>
                     </Routes>
                 </div>
             </BrowserRouter>
         </div>
     );
 }
-export default App
+
+export default  App;
